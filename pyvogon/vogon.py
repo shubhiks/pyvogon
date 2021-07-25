@@ -2,7 +2,7 @@ from sqlalchemy import types
 from sqlalchemy.engine import default
 from sqlalchemy.sql import compiler
 
-import vogon.base
+import pyvogon.base
 
 RESERVED_SCHEMAS = []
 
@@ -102,7 +102,7 @@ class VogonDialect(default.DefaultDialect):
 
     @classmethod
     def dbapi(cls):
-        return vogon.base
+        return pyvogon.base
 
     def do_rollback(self, dbapi_connection):
         pass

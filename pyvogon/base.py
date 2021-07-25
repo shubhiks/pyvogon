@@ -3,7 +3,7 @@ import json
 import time
 import requests
 
-from vogon import exceptions
+from pyvogon import exceptions
 
 QUERY_SUBMIT = '/api/spark/sql'
 QUERY_PROGRESS = '/api/spark/progress'

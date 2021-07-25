@@ -1,6 +1,6 @@
-from vogon.base import connect
-import vogon.vogon
-from vogon.vogon import VogonDialect
+from pyvogon.base import connect
+import pyvogon.vogon
+from pyvogon.vogon import VogonDialect
 
 from .exceptions import (
     DatabaseError,
